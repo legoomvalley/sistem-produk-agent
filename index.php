@@ -3,6 +3,17 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+  <style>
+    input[type = submit] {
+            background-color: blueviolet;
+            border: none;
+            text-decoration: none;
+            color: white;
+            padding: 10px 10px;
+            margin: 20px 20px;
+            cursor: pointer;
+        }
+  </style>
 </head>
 <body>
 <br>
@@ -12,18 +23,19 @@
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="/action_page.php" method="POST">
+  <form class="modal-content animate" action="LoginVerify.php" method="POST">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+      <img src="img_avatar.png" alt="Avatar" width="60px" >
     </div>
     <div class="container">
-      <label for="uname"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="uname" required>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
       <label for="pass"><b>Password</b></label>
       <input type="password" placeholder="Enter Password" name="pass" required>
         
-      <button type="submit">Login</button>
+      <input type="submit" value="Login">
+      <br>
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>

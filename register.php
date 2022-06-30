@@ -24,7 +24,7 @@
 
     <label for="gender">Gender</label>
     <select name="gender" id="gender">
-	    <option value="">--- Choose a color ---</option>
+	    <option value="">--- Choose a gender ---</option>
 	    <option value="male">Male</option>
 	    <option value="female">Female</option>
     </select>
