@@ -7,7 +7,7 @@ if(isset($_SESSION['UID'])) {
 
 <html>
 <head>
-<title>System Produk and Agent</title>
+<title>System Product and Agent</title>
 <style>
 body 
 /* {background-image:url(menu_page.jpg);} */
@@ -38,7 +38,7 @@ Search <input type="text" name="search"><br><br>
 	else{
 ?>
 	<a href= "user_profile.php">See my profile</a><br><br>
-	<a href= "product_form.php">Post more product</a><br><br>
+	<a href= "product_form.php">add more product</a><br><br> 
 	<a href= "product_edit_view_user.php">Edit your product details</a><br><br>
 	<a href= "product_delete_view_user.php">Delete your product record</a><br><br>
 	<a href= "product_view_other.php">View other product</a><br><br>	
