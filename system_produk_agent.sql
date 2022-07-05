@@ -12,9 +12,21 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
--- Data exporting was unselected.
+-- Dumping data for table system_produk_agent.produk: ~1 rows (approximately)
+DELETE FROM `produk`;
+/*!40000 ALTER TABLE `produk` DISABLE KEYS */;
+INSERT INTO `produk` (`id`, `name`, `quantity`, `price`, `photo`, `date`, `details`, `user`) VALUES
+	(1, 'kerusi', 100, 80, 'uploads/kerusi.png', '2004-07-22 04:38:39', 'selesa', 'adin@gmail.com');
+/*!40000 ALTER TABLE `produk` ENABLE KEYS */;
 
--- Data exporting was unselected.
+-- Dumping data for table system_produk_agent.user: ~3 rows (approximately)
+DELETE FROM `user`;
+/*!40000 ALTER TABLE `user` DISABLE KEYS */;
+INSERT INTO `user` (`id`, `name`, `pass`, `email`, `role`, `phone`, `gender`) VALUES
+	(1, 'admin', 'admin', 'admin', 'admin', NULL, NULL),
+	(2, 'adin', '1234', 'adin@gmail.com', 'user', NULL, NULL),
+	(3, 'ali bin hasan', '1234', 'ali@gmail.com', 'user', '012-22223444', 'male');
+/*!40000 ALTER TABLE `user` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
 /*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
